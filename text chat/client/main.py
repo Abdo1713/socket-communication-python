@@ -3,7 +3,7 @@ import threading
 import os
 import shutil
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('192.168.1.8', 3000))
+client.connect(('', 3000))#ip address here
 project = os.getcwd()
 filename = ""
 filepath = ""
