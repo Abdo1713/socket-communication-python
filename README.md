@@ -48,7 +48,7 @@ A simple client-server chat application with file transfer capabilities, built u
    - When naming the new file during file transfer, include the file extension (e.g., `.jpg`, `.docx`, `.txt`).
 
 4. **Server IP Address**:
-   - The client needs to know the server’s private IP address. Replace `192.168.1.8` in `client/main.py` with the server’s actual IP address.
+   - The client needs to know the server’s private IP address. Replace the empty space between `''` in `client/main.py` with the server’s actual IP address.
 
 5. **File Transfer**:
    - To send a file, type `send_file` in the client. The server will automatically receive the file.
