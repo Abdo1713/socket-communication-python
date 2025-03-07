@@ -1,6 +1,11 @@
 # Socket Communication: Client-Server Chat Application
 
-A simple client-server chat application with file transfer capabilities, built using Python and sockets.
+A simple client-server chat application with file transfer capabilities, built using Python and sockets. This project allows real-time text messaging and file transfers between a client and server.
+
+---
+
+## Credits & Inspiration
+This project is inspired by the simplicity and power of socket programming in Python. It is published mainly for **Hack Club** and for others to learn about networking and socket communication.
 
 ---
 
@@ -8,32 +13,49 @@ A simple client-server chat application with file transfer capabilities, built u
 - Real-time text messaging between client and server.
 - File transfer functionality (e.g., images, documents).
 - Graceful connection termination.
+- Cross-platform compatibility (Windows, macOS, Linux).
 
 ---
 
-## Project Contents
-- **2 Codes**:
-  - `server/main.py`: Server-side code.
-  - `client/main.py`: Client-side code.
+## Bugs
+- If the socket doesn’t close correctly, you may need to change the port number the next time you run the server and client.
 
-- **Programming Language**: Python.
 
-- **Libraries Used**:
-  - Built-in Python libraries: `socket`, `threading`, `os`, `shutil`.
+## Installation
+
+### Command prompt
+1. Clone the repository or download the script:
+   ```sh
+   git clone https://github.com/Abdo1713/socket-communication-python.git
+   cd socket-communication-python
+   pip install -r requirements.txt
+2. Run the script:
+   ```sh
+   Server:
+     cd "text chat\server"
+     python main.py
+   Client:
+     cd "text chat\client"
+     python main.py
 
 ---
 
-## Server Functions
-1. **Send Text**: Send text messages to the client.
-2. **Receive Text**: Receive text messages from the client.
-3. **Receive File**: Receive files (e.g., images, documents) from the client.
+### **Dependencies, How to Use, Important Notes, Contributing, and License**
+
+```markdown
+## Dependencies
+The project uses only built-in Python libraries: socket threading os shutil
+
+No additional installations are required.
 
 ---
 
-## Client Functions
-1. **Send Text**: Send text messages to the server.
-2. **Receive Text**: Receive text messages from the server.
-3. **Send File**: Send files (e.g., images, documents) to the server.
+## How to Use
+1. Start the server first by running the server script.
+2. Start the client in a separate terminal window.
+3. Use the client to send messages or files to the server.
+4. To send a file, type `send_file` in the client and follow the prompts.
+5. To end the chat, type `/end_chat` in the client or `end_chat` in the server.
 
 ---
 
@@ -45,29 +67,15 @@ A simple client-server chat application with file transfer capabilities, built u
    - If the socket doesn’t close correctly, you may need to change the port number the next time you run the server and client.
 
 3. **File Naming**:
-   - When naming the new file during file transfer, include the file extension (e.g., `.jpg`, `.docx`, `.txt`).
+   - When naming the new file during file transfer, include the file extension (e.g., `.jpg`, `.docx`).
 
 4. **Server IP Address**:
-   - The client needs to know the server’s private IP address. Replace the empty space between `''` in `client/main.py` with the server’s actual IP address.
-
-5. **File Transfer**:
-   - To send a file, type `send_file` in the client. The server will automatically receive the file.
-
-6. **Purpose**:
-   - This project is published mainly for **Hack Club** and for others to learn about socket programming in Python.
+   - The client needs to know the server’s private IP address. Replace `192.168.1.8` in `client/main.py` with the server’s actual IP address.
 
 ---
 
-## How to Run
+## Contributing
+Feel free to contribute to this project by opening issues or submitting pull requests.
 
-### Prerequisites
-- Python 3.x installed on your system.
-- Git (optional, for cloning the repository).
 
----
-
-### Step 1: Clone the Repository
-Open a terminal and run the following command to clone the repository:
-```bash
-git clone https://github.com/Abdo1713/socket-communication-python.git
-cd socket-communication-python
+  
