@@ -55,7 +55,7 @@ No additional installations are required.
 2. Start the client in a separate terminal window.
 3. Use the client to send messages or files to the server.
 4. To send a file, type `send_file` in the client and follow the prompts.
-5. To end the chat, type `/end_chat` in the client or `end_chat` in the server.
+5. To end the chat, type `end_chat` in the client or `end_chat` in the server.
 
 ---
 
