@@ -70,7 +70,7 @@ No additional installations are required.
    - When naming the new file during file transfer, include the file extension (e.g., `.jpg`, `.docx`).
 
 4. **Server IP Address**:
-   - The client needs to know the server’s private IP address. Replace the empty space between `''` in `client/main.py` with the server’s actual IP address.
+   - When the client code runs, it first asks you for the server's private IP_address
 
 ---
 
