@@ -73,6 +73,8 @@ No additional installations are required.
 4. **Server IP Address**:
    - When the client code runs, it first asks you for the server's private IP_address
 
+5. **Send_file**:
+   -For some reason sending files over cmd sometimes malfunctions and doesn't get sent through but texting works perfectly fine
 ---
 
 ## Contributing
