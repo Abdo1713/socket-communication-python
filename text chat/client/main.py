@@ -38,7 +38,7 @@ while True:
     if data == "send_file":
         print("ENTER FILE PATH:")
         filepath = input()
-        print("Enter new name for image (must end with the extension type):")
+        print("Enter new name for file (must end with the extension type):")
         new = input()
         send_file(filepath, new)
     elif data == "exit_chat":
