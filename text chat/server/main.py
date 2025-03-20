@@ -6,7 +6,7 @@ def receive_file(client_socket):
     print(f"Receiving file: {file_name}")
     file_size = int(client_socket.recv(1024).decode())
     print(f"File size: {file_size} bytes")
-    file_data = b""
+    file_data = b"<LOL>"
     while len(file_data) < file_size:
         data = client_socket.recv(1024)
         file_data += data
