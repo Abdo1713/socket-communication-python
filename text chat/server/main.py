@@ -31,20 +31,14 @@ def server_send():
 def handle_client(client_socket, addr):
     print(f'Connected by {addr}')
     clients.append(client_socket)
-    try:
-        while True:
-            data = client_socket.recv(1024)
-            if not data:
-                break
-            print(f"{addr} said: {data.decode('utf-8')}")
-            if data.decode('utf-8') == "sending...":
-                receive_file(client_socket)
-    except:
-        pass
-    finally:
-        print(f"Connection closed: {addr}")
-        clients.remove(client_socket)
-        client_socket.close()
+    while True:
+        data = client_socket.recv(1024)
+        if not data:
+            break
+        print(f"{addr} said: {data.decode('utf-8')}")
+        if data.decode('utf-8') == "sending...":
+            receive_file(client_socket)
+        
 
 def start_server(host='0.0.0.0', port=2000):
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
